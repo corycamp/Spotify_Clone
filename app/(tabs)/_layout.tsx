@@ -1,8 +1,6 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
-
-// import { TabBarIcon } from '@/components/navigation/TabBarIcon';
-import { Entypo, MaterialCommunityIcons, MaterialIcons, FontAwesome5, EvilIcons} from '@expo/vector-icons';
+import { Entypo, MaterialIcons, EvilIcons} from '@expo/vector-icons';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
 
