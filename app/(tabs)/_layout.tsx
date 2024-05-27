@@ -16,9 +16,10 @@ export default function TabLayout() {
         headerShown: false,
       }}>
       <Tabs.Screen
-        name="homeScreen"
+        name="index"
         options={{
           title: 'Home',
+          headerTitle:'Home',
           tabBarIcon: ({ color }) => (
             <Entypo name='home' size={28} color={color} style={{marginBottom:-3}}/>
           ),
@@ -29,7 +30,7 @@ export default function TabLayout() {
         options={{
           title: 'Search',
           tabBarIcon: ({ color}) => (
-            <EvilIcons name="search" color={color} size={40} style={{marginBottom:-3}} />
+            <EvilIcons name="search" color={color} size={40} style={{marginBottom:3}} />
           ),
         }}
       />

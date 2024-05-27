@@ -1,0 +1,58 @@
+export default [{
+    id:'1',
+    title:'Happy Vibes',
+    albums:[{
+      id:'1',
+      imageUri:'https://img.freepik.com/free-photo/majestic-mountain-peak-tranquil-winter-landscape-generated-by-ai_188544-15662.jpg?w=2000&t=st=1716773530~exp=1716774130~hmac=55148e2f71dc80d9f0281b564aeedb85390384e1a02dc256436c59cfb0cf35a9',
+      artistsHeadline:'Test'
+    },
+    {
+      id:'2',
+      imageUri:'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?t=st=1716773466~exp=1716777066~hmac=c45eafa08018aceb5e92b5c33d0f7cd7c967475b09f1f6ca75cd304495f305e9&w=2000',
+      artistsHeadline:'Test'
+    },
+    {
+      id:'3',
+      imageUri:'https://img.freepik.com/premium-photo/painting-mountain-lake-with-mountain-background_625492-5724.jpg?w=1480',
+      artistsHeadline:'Test'
+    }]
+  },
+  {
+    id:'2',
+    title:'Happy Vibes',
+    albums:[{
+      id:'1',
+      imageUri:'https://img.freepik.com/free-photo/majestic-mountain-peak-tranquil-winter-landscape-generated-by-ai_188544-15662.jpg?w=2000&t=st=1716773530~exp=1716774130~hmac=55148e2f71dc80d9f0281b564aeedb85390384e1a02dc256436c59cfb0cf35a9',
+      artistsHeadline:'Test'
+    },
+    {
+      id:'2',
+      imageUri:'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?t=st=1716773466~exp=1716777066~hmac=c45eafa08018aceb5e92b5c33d0f7cd7c967475b09f1f6ca75cd304495f305e9&w=2000',
+      artistsHeadline:'Test'
+    },
+    {
+      id:'3',
+      imageUri:'https://img.freepik.com/premium-photo/painting-mountain-lake-with-mountain-background_625492-5724.jpg?w=1480',
+      artistsHeadline:'Test'
+    }]
+  },
+  {
+    id:'3',
+    title:'Happy Vibes',
+    albums:[{
+      id:'1',
+      imageUri:'https://img.freepik.com/free-photo/majestic-mountain-peak-tranquil-winter-landscape-generated-by-ai_188544-15662.jpg?w=2000&t=st=1716773530~exp=1716774130~hmac=55148e2f71dc80d9f0281b564aeedb85390384e1a02dc256436c59cfb0cf35a9',
+      artistsHeadline:'Test'
+    },
+    {
+      id:'2',
+      imageUri:'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?t=st=1716773466~exp=1716777066~hmac=c45eafa08018aceb5e92b5c33d0f7cd7c967475b09f1f6ca75cd304495f305e9&w=2000',
+      artistsHeadline:'Test'
+    },
+    {
+      id:'3',
+      imageUri:'https://img.freepik.com/premium-photo/painting-mountain-lake-with-mountain-background_625492-5724.jpg?w=1480',
+      artistsHeadline:'Test'
+    }]
+  }
+]
