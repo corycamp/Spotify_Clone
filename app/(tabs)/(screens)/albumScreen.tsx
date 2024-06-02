@@ -2,6 +2,7 @@ import albumDetails from "@/data/albumDetails";
 // import { useLocalSearchParams } from "expo-router";
 import { View, StyleSheet, FlatList } from "react-native";
 import SongListItem from "@/components/SongListItem";
+import AlbumHeader from "@/components/AlbumHeader";
 
 const AlbumScreen = ()=>{
     // const params = useLocalSearchParams();
@@ -11,7 +12,8 @@ const AlbumScreen = ()=>{
               data={albumDetails.songs}
               renderItem={({item})=> <SongListItem song={item}/> }
               keyExtractor={(item) => item.id}
-            />  
+              ListHeaderComponent={()=> <AlbumHeader album={albumDetails}/>}
+            />
         </View>
     )
 }
