@@ -41,6 +41,12 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="(screens)"
+        options={{
+          href: null
+        }}
+      />
     </Tabs>
   );
 }

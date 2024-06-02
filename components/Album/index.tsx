@@ -12,7 +12,7 @@ const AlbumComponent = (props: AlbumProps)=>{
     const router = useRouter()
 
     const onPress = ()=>{
-        router.push({pathname:"/AlbumScreen", params:{id:props.album.id}})
+        router.push({pathname:"albumScreen", params:{id:props.album.id}})
     }
 
     return(
