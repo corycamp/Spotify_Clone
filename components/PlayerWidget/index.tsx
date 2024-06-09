@@ -1,10 +1,8 @@
-import { Song } from "@/types"
-import {Text, Image, View, TouchableOpacity} from "react-native"
+import {Text, Image, View, TouchableOpacity, Platform} from "react-native"
 import styles from "./styles"
 import { AntDesign } from "@expo/vector-icons"
 import { FontAwesome } from '@expo/vector-icons';
 import { useEffect, useState } from "react";
-import { Audio } from "expo-av";
 import { Sound } from "expo-av/build/Audio";
 const song = {
     id:'1',
@@ -22,7 +20,7 @@ const PlayerWidget = ()=>{
     const [duration, setDuration] = useState<number|null>(null);
     const [position, setPosition] = useState<number|null>(null);
 
-    const onPlaybackStatusUpdate = (status)=>{
+    const onPlaybackStatusUpdate = (status:any)=>{
        setIsPlaying(status.isPlaying)
        setDuration(status.durationMillis)
        setPosition(status.positionMillis)
@@ -41,6 +39,18 @@ const PlayerWidget = ()=>{
 
         setSound(newSound)
     }
+
+    useEffect(() => {
+        if (Platform.OS === 'android') {
+          const intervalId = setInterval(() => {
+            const updatePlaybackStatus = async () => {
+              await sound?.getStatusAsync();
+            };
+            updatePlaybackStatus();
+          }, 500);
+          return () => clearInterval(intervalId);
+        }
+      }, [sound]);
 
     useEffect(()=>{
         playCurrentSong();
