@@ -3,11 +3,13 @@ import React from 'react';
 import { Entypo, MaterialIcons, EvilIcons} from '@expo/vector-icons';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
+import PlayerWidget from '@/components/PlayerWidget';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
 
   return (
+    <>
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
@@ -48,5 +50,7 @@ export default function TabLayout() {
         }}
       />
     </Tabs>
+    <PlayerWidget/>
+    </>
   );
 }
