@@ -1,0 +1,22 @@
+{
+  "api": {
+    "spotifyclone": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDate": "2024-06-16T23:52:22.588Z",
+              "apiKeyExpirationDays": 7,
+              "description": "Using for spotify clone application"
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  }
+}
